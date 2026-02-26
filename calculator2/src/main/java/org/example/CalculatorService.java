@@ -48,7 +48,7 @@ public class CalculatorService {
 
     public double divide(ArrayList<Double> numbers) {
         validateEmpty(numbers);
-        double result = numbers.get(0);
+        double result = numbers.get(1);
         for(int i  = 1; i < numbers.size(); i++){
             if(numbers.get(i) == 0){
                 throw new ArithmeticException("divide by zero");
